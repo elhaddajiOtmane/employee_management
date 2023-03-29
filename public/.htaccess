@@ -1,21 +1,6 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
-    RewriteEngine On
-
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
-
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
-</IfModule>
+INSERT INTO employees (id, name, email, email_verified_at, status, type, password, remember_token, created_at, updated_at, google_id) VALUES
+(5, 'Yassine Boumehdi', 'yassine@example.com', NULL, 1, 1, '$2y$10$hFnzlT/Z9OzKzkbsxeGWDOlZlgXa49nvoSbuwiPpUc7TytA8qIudS', NULL, '2023-03-16 23:48:40', '2023-03-16 23:48:40', NULL),
+(87, 'Omar Belkhayat', 'omar@example.com', NULL, 1, 0, '$2y$10$hLsyZ4ovlM6e7og29T.n2eEvswj0h4BU.8tkr.iPJ2JuMviNzPrgC', NULL, '2023-03-16 23:48:40', '2023-03-18 00:38:37', NULL),
+(31, 'Amine Mouline', 'amine@example.com', NULL, 1, 0, '$2y$10$opuvjwlimYINYqyOFa5s5uHUrXAjaLm7zoekRh2X/y1OFKRiw3crG', NULL, '2023-03-17 07:17:14', '2023-03-17 07:17:14', NULL),
+(65, 'Yassine Boumehdi', 'yassine.mict@gmail.com', NULL, 1, 0, '$2y$10$IuMqRN59IzgWzQMEqnv9aelDZaYjUpFVVS5bTxKgBCaFS8vnqjfW2', NULL, '2023-03-17 08:56:16', '2023-03-18 13:40:16', '109947788424447267070'),
+(100, 'Mehdi Benjelloun', 'mehdi@example.com', NULL, 1, 0, '$2y$10$27/Oqo1qQBHZXBDKc0KQT.MnL072hBK3kWB67ARQwhZwAZUi6.lVy', NULL, '2023-03-19 02:42:14', '2023-03-19 02:42:31', NULL);

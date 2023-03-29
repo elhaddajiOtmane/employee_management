@@ -95,13 +95,7 @@
           </div>
         </form>
 
-        <div class="social-auth-links text-center">
-          <p>- OR -</p>
-          <a href="{{ route('auth.google') }}" class="btn btn-block btn-danger">
-            <i class="fab fa-google-plus mr-2"></i>
-            Sign up using Google+
-          </a>
-        </div>
+        
 
         <a href="{{ route('login') }}" class="text-center">I already have a membership</a>
       </div>
